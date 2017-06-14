@@ -1,0 +1,19 @@
+{
+  "name": "sinon-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc _mocha test/bootstrap.test test/unit/",
+    "start": "node -e 'require(\"./src/myApp\").main();'"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2",
+    "nyc": "^11.0.2",
+    "sinon": "^2.3.4",
+    "sinon-chai": "^2.11.0"
+  }
+}
