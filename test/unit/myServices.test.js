@@ -15,9 +15,11 @@ describe('##### MY SERVICES #####', function () {
 
     describe('addition()', function () {
 
+        var callback;
         var myHelpers_doNothing_stub;
 
         beforeEach(function () {
+            callback = sinon.spy();
             myHelpers_doNothing_stub = sinon.stub(myHelpers, 'doNothing');
         });
 
@@ -26,7 +28,6 @@ describe('##### MY SERVICES #####', function () {
         });
 
         it('Should return correct result', function (done) {
-            var callback = sinon.spy();
             myHelpers_doNothing_stub.yields();
 
             myServices.addition(1, 2, callback);
@@ -38,7 +39,6 @@ describe('##### MY SERVICES #####', function () {
         });
 
         it('Should return incorrect result', function (done) {
-            var callback = sinon.spy();
             myHelpers_doNothing_stub.yields();
 
             myServices.addition(1, 2, callback);
