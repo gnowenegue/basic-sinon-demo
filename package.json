@@ -1,19 +1,19 @@
 {
-  "name": "sinon-demo",
+  "name": "basic-sinon-demo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "",
   "scripts": {
-    "test": "nyc _mocha test/bootstrap.test test/unit/",
+    "test": "nyc mocha test/bootstrap.test.js test/unit/",
     "start": "node -e 'require(\"./src/myApp\").main();'"
   },
-  "author": "",
-  "license": "MIT",
+  "author": "Eugene Wong",
+  "license": "ISC",
   "devDependencies": {
     "chai": "^4.0.2",
-    "mocha": "^3.4.2",
-    "nyc": "^11.0.2",
-    "sinon": "^2.3.4",
-    "sinon-chai": "^2.11.0"
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1",
+    "sinon": "^7.5.0",
+    "sinon-chai": "^3.3.0"
   }
 }
